@@ -12,6 +12,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "serve": "bun run build && serve dist",
+    "cloud": "echo 'Deploying to Cloudflare...'",
     "preview": "astro preview",
     "astro": "astro",
     "preprod": "bun run build",
