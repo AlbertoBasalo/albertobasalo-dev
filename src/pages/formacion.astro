@@ -1,0 +1,112 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+
+const FORMACION = {
+  layout: {
+    title: "Formación",
+    description: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+  },
+  hero: {
+    title: "Formación",
+    subtitle: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+    cta: {
+      text: "Learn to code smarter",
+      link: "",
+    },
+  },
+  angular: {
+    title: "Angular",
+    subtitle: "Aprende a desarrollar aplicaciones de categoría empresarial con Angular.",
+    cards: [
+      {
+        title: "Basic",
+        description: "Fundamentos del framework más usado por bancos, administraciones y multinacionales.",
+      },
+      {
+        title: "Advanced",
+        description: "Escala tus desarrollos con librerías, micro-servicios y gestión avanzada de estado.",
+      },
+    ]
+  },
+  testing: {
+    title: "Testing",
+    subtitle: "Aprende a probar tu código para ganar tranquilidad.",
+    cards: [
+      {
+        title: "Jest",
+        description: "Pruebas unitarias de Node, Angular y cualquier variante de JavaScript.",
+      },
+      {
+        title: "Cypress", 
+        description: "Pruebas fáciles y dev-friendly de aplicaciones web.",
+      },
+      {
+        title: "Playwright",
+        description: "Versatilidad, velocidad e integración con IA",
+      },
+    ]
+  },
+  aidd: {
+    title: "Desarrollo con IA",
+    subtitle: "Cursor, Claude, Gemini, GitHub Copilot, Cline... Todos son bienvenidos.",
+    cards: [
+      {
+        title: "AIDD",
+        description: "Aplica la metodología AI-Driven Development a todo el ciclo de desarrollo.",
+      },
+      {
+        title: "Agentes",
+        description: "Desarrolla y usa agentes y servicios MCP para tu proyecto.",
+      },
+    ]
+  },
+  clean: {
+    title: "Buenas prácticas",
+    subtitle: "Aprende a desarrollar un software más mantenible y escalable.",
+    cards: [
+      {
+        title: "Clean Code",
+        description: "Los básicos para humanos y agentes: nombres, complejidad, convenios, funciones y clases. Y un poco de documentación y pruebas.",
+      },
+      {
+        title: "Patrones de diseño",
+        description: "Evita code-smells aplicando patrones de diseño: estructurales, de comportamiento y de creación.",
+      },
+      {
+        title: "Arquitectura de software",
+        description: "Des de las capas de un monolito modular, hasta un sistema distribuido con micro-frontend y CQRS.",
+      },
+    ]
+  },
+  ediciones: {
+    title: "Ediciones",
+    subtitle: "Todos los cursos se pueden bonificar por FUNDADE.",
+    cards: [
+      {
+        title: "En directo",
+        description: "Escoge horarios y días para aprender en directo. Con un temario adaptado a tus necesidades.",
+      },
+      {
+        title: "En video",
+        description: "Aprende a tu ritmo. Pero con mi ayuda en prácticas y chat de dudas.",
+      },
+    ],
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
+  }
+}
+---
+
+<Layout layout={FORMACION.layout}>
+  <Hero hero={FORMACION.hero} />
+
+  <Section section={FORMACION.angular} />
+  <Section section={FORMACION.testing} />
+  <Section section={FORMACION.aidd} />
+  <Section section={FORMACION.clean} />
+  <Section section={FORMACION.ediciones} />
+</Layout>

@@ -1,0 +1,66 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+const PORTFOLIO = {
+  layout: {
+    title: "Portfolio",
+    description:
+      "Empresas y organizaciones que he ayudado a mejorar su código.",
+  },
+  hero: {
+    title: "Portfolio",
+    subtitle: "Empresas y organizaciones que he ayudado a mejorar su código.",
+    cta: {
+      text: "AI code quality",
+      link: "",
+    },
+  },
+};
+---
+
+<Layout layout={PORTFOLIO.layout}>
+  <Hero hero={PORTFOLIO.hero} />
+
+  <main class="grid">
+    <ul>
+      <li>Abanca</li>
+      <li>Aldaba</li>
+      <li>Altia</li>
+      <li>AirBus</li>
+      <li>Ancert</li>
+      <li>APfutura</li>
+      <li>Balidea</li>
+      <li>BBVA</li>
+    </ul>
+    <ul>
+      <li>Banco de Santander</li>
+      <li>Barceló Viajes</li>
+      <li>CoreMain</li>
+      <li>Cluster TIC Galicia</li>
+      <li>DuaCode</li>
+      <li>Ezentis</li>
+      <li>Hotusa</li>
+      <li>Imatia</li>
+    </ul>
+    <ul>
+      <li>Imaweb</li>
+      <li>Indra</li>
+      <li>Qindel</li>
+      <li>Quaroni</li>
+      <li>LedaMC</li>
+      <li>Montrel</li>
+      <li>Netex</li>
+      <li>Plexus</li>
+    </ul>
+    <ul>
+      <li>PSA-Peugeot-Citroën</li>
+      <li>Pull&Bear</li>
+      <li>Softtek</li>
+      <li>TcMan</li>
+      <li>Televes</li>
+      <li>Ultebra</li>
+      <li>Zara</li>
+      <li>Zara Home</li>
+    </ul>
+  </main>
+</Layout>

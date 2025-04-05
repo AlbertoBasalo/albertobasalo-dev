@@ -1,0 +1,107 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+
+
+const CONSULTORIA = {
+  layout: {
+    title: "Consultoría",
+    description: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+  },
+  hero: {
+    title: "Consultoría",
+    subtitle: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+    cta: {
+      text: "Elevate your code quality",
+      link: "",
+    },
+  } ,
+  arquitectura: {
+    title: "Arquitectura de software",
+    subtitle: "¿Nuevo proyecto? ¿Quizá un rewrite? Construye sobre una buena base.",
+    cards: [
+      {
+        title: "Frontend",
+        description: "Aplicaciones con Angular modernas y mantenibles. Gestión de estado. Micro frontends. Testing. etc.",
+      },
+      {
+        title: "Backend",
+        description: "APIs robustas y mantenibles con Express, Fastify, NestJS o Bun. Monolitos, micro-servicios, CQRS, DDD, etc.",
+      },
+    ],
+    cta: {
+      text: "Video resumen sobre arquitecturas de software",
+      link: "https://youtu.be/AFVazQ573wU?si=Wprmb4WxMutRbe0f",
+    }
+  },
+  testing: {
+    title: "Testing",
+    subtitle: "Implanta Jest, Vitest, Cypress o Playwright... y relájate.",
+    cards: [
+      {
+        title: "Unit",
+        description: "La clave está en la velocidad... y en los dobles.",
+      },
+      {
+        title: "Integration",
+        description: "Prueba el comportamiento de tus módulos críticos.",
+      },
+      {
+        title: "End-to-End",
+        description: "Compórtate como un usuario y asegura su confianza.",
+      },
+    ]
+  },
+  refactoring: {
+    title: "Código legacy",
+    subtitle: "Moderniza tu código legado para hacerlo más fácil de mantener.",
+    cards: [
+      {
+        title: "Refactoring",
+        description: "El paso del tiempo no perdona ni siquiera al código. Corrige, mejora o adapta tu base de código para que siga siendo útil.",
+      },
+      {
+        title: "Migraciones",
+        description: "Actualiza tus desarrollos a las últimas versiones de tus frameworks y lenguajes.",
+      },
+    ]
+  },
+  ia: {
+    title: "AI-Driven Development",
+    subtitle: "Aumenta tu productividad y la calidad de tu código con tres agentes de IA.",
+    cards: [
+      {
+        title: "Architect",
+        description: "Briefings, PRDs, user stories, data models, etc. Incluye la IA desde el principio.",
+      },
+      {
+        title: "Builder",
+        description: "Con el contexto y las reglas de codificación adecuados, el código se escribe solo. (o casi)",
+      },
+      {
+        title: "Craftsman",
+        description: "La confianza se gana demostrando que el código funciona y es mantenible.",
+      },
+    ],
+  },
+  sesion: {
+    title: "Sesión de consultoría",
+    subtitle: "¿Quieres que te ayude a mejorar tu productividad o la calidad de tu código?",
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
+  }
+}
+---
+
+<Layout layout={CONSULTORIA.layout}>
+  <Hero hero={CONSULTORIA.hero} />
+
+  <Section section={CONSULTORIA.arquitectura} />  
+  <Section section={CONSULTORIA.testing} />
+  <Section section={CONSULTORIA.refactoring} />
+  <Section section={CONSULTORIA.ia} />
+  <Section section={CONSULTORIA.sesion} />
+</Layout>
