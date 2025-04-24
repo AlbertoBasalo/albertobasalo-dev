@@ -60,21 +60,21 @@ export const HOME: Home = {
       },
       {
         title: "Express",
-        description: "APIS, rendimiento, seguridad, alternativas a express y a Node.js",
+        description: "APIS, rendimiento, seguridad. Y alternativas a Express y a Node.js",
       },
       {
         title: "Cypress",
-        description: "Si aún no haces pruebas, empieza por aquí. Fácil y agradable, sin excusas.",
+        description: "Si aún no haces pruebas, empieza por aquí. Fácil y agradable; sin excusas.",
       },
       {
         title: "Playwright",
-        description: "Rapidez y versatilidad, muy integrable con herramientas de IA",
+        description: "Rapidez y versatilidad, muy integrable con herramientas de IA.",
       },
     ]
   },
   aidd: {
     title: "AI-Driven Development",
-    subtitle: "Aplica los principios AI-DD para desarrollar profesionalmente con IA",
+    subtitle: "Aplica los principios AI-DD para desarrollar profesionalmente con I.A.",
     cards: [
       {
         title: "Human in the Loop",
