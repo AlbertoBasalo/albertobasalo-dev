@@ -21,8 +21,9 @@
 
 .comment {
   color: var(--pico-secondary);
-  margin-right: 4%;
+  margin-right: 2%;
 }
+
 
 .container {
   margin-top: 2%;
@@ -35,4 +36,11 @@
 
 .primary {
   color: var(--pico-primary);
+}
+
+.secondary {
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

@@ -75,6 +75,10 @@ article, section  {
   padding: 4%;
 }
 
+header {
+  margin-bottom: 1rem;
+}
+
 [data-theme="light"] .light {
   display: none;
 }

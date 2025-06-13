@@ -28,7 +28,7 @@ const id = section.title?.toLowerCase().replace(/ /g, "-").replace(/\./g, "-").r
 <section id={id} class="container">
   <header class="center">
     <h2 class="color">{section.title}</h2>
-    <p>{section.subtitle}</p>
+    <center>{section.subtitle}</center>
   </header>
   {section.cards && section.cards.length > 0 && (
     <main class="grid">

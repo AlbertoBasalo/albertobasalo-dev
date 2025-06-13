@@ -31,6 +31,7 @@
   --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
   --ab-theme-gray: var(--ab-dark-gray);
   --ab-gradient-primary: linear-gradient(var(--ab-dark-blue), var(--ab-light-blue));
+  --ab-gradient-secondary: linear-gradient(var(--ab-dark-green), var(--ab-light-green));
   color-scheme: dark;
 }
 
@@ -53,6 +54,7 @@
   --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
   --ab-theme-gray: var(--ab-light-gray);
   --ab-gradient-primary: linear-gradient(var(--ab-dark-blue), var(--ab-light-blue));
+  --ab-gradient-secondary: linear-gradient(var(--ab-dark-green), var(--ab-light-green));
   color-scheme: light;
 }
 

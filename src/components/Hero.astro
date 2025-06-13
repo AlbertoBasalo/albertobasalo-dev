@@ -20,7 +20,7 @@ const { title, subtitle, cta } = hero;
       <h1 class="color"><MatrixText text={title} /></h1>
     </header>
     <main class="center">
-      <p>{subtitle}<BlinkCursor /></p>
+      <center>{subtitle}<BlinkCursor /></center>
     </main>
     {cta && (
       <footer class="center">
@@ -34,7 +34,7 @@ const { title, subtitle, cta } = hero;
         )}
         {
           !cta.link && (
-            <h2 class="comment">{cta.text}</h2>
+            <h2 class="center secondary">{cta.text}</h2>
           )
         }
       </footer>

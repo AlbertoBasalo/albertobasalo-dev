@@ -22,7 +22,7 @@ export const HOME: Home = {
     subtitle: "Consultoría y formación para programadores profesionales.",
     cards: [],
     cta: {
-      text: "AI code quality",
+      text: "AI code Quality",
       link: "",
     },
   },
