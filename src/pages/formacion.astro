@@ -16,6 +16,40 @@ const FORMACION = {
       link: "",
     },
   },
+   services: {
+    title: "¿En qué te puedo formar?",
+    subtitle: "Ofrezco servicios como freelance para academias y consultoras del sector IT.",
+    cards: [
+      {
+        title: "Angular",
+        cta: {
+          text: "Fundamentos y avanzado",
+          link: "#angular",
+        },
+      },
+      {
+        title: "Testing",
+        cta: {
+          text: "Unit, E2E y TDD",
+          link: "#testing",
+        },
+      },
+      {
+        title: "AI-DD",
+        cta: {
+          text: "Desarrollo con IA",
+          link: "#desarrollo-con-ia",
+        },
+      },
+      {
+        title: "Clean Code",
+        cta: {
+          text: "Patrones y Arquitectura",
+          link: "#buenas-prácticas",
+        },
+      },
+    ]
+  },
   angular: {
     title: "Angular",
     subtitle: "Aprende a desarrollar aplicaciones de categoría empresarial con Angular.",
@@ -104,6 +138,7 @@ const FORMACION = {
 <Layout layout={FORMACION.layout}>
   <Hero hero={FORMACION.hero} />
 
+  <Section section={FORMACION.services} />
   <Section section={FORMACION.angular} />
   <Section section={FORMACION.testing} />
   <Section section={FORMACION.aidd} />

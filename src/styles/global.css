@@ -6,6 +6,7 @@
   --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
   --pico-font-family-monospace: "Fira Mono", Consolas, monospace;
   --pico-border-radius: 0rem;
+  --pico-typography-spacing-vertical: 0.6rem;
 }
 
 body {
