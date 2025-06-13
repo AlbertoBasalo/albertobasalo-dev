@@ -56,19 +56,19 @@ export const HOME: Home = {
     cards: [
       {
         title: "Angular",
-        description: "Migraciones, gestión de estado, micro frontends, testing, etc.",
+        description: "Migraciones, gestión de estado, micro frontends, testing, etc. (Angular clásico o moderno con señales y sin módulos)",
       },
       {
         title: "Express",
-        description: "APIS, rendimiento, seguridad. Y alternativas a Express y a Node.js",
+        description: "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS, etc. (También con Bun y NestJS)",
       },
       {
         title: "Cypress",
-        description: "Si aún no haces pruebas, empieza por aquí. Fácil y agradable; sin excusas.",
+        description: "Automatización de pruebas end-to-end de aplicaciones web y APIs. (También con Playwright o Puppeteer)",
       },
       {
-        title: "Playwright",
-        description: "Rapidez y versatilidad, muy integrable con herramientas de IA.",
+        title: "Jest",
+        description: "Pruebas unitarias, de integración y TDD con TypeScript. (También con Vitest)",
       },
     ]
   },
@@ -78,15 +78,15 @@ export const HOME: Home = {
     cards: [
       {
         title: "Human in the Loop",
-        description: "El humano es estratega, colaborador y responsable.",
+        description: "El humano es estratega, colaborador y responsable. Cambio de rol para los programadores: más documentación y arquitectura de software.",
       },
       {
         title: "Rules over Tools",
-        description: "Las herramientas se someten a metodologías de desarrollo.",
+        description: "Las herramientas se someten a metodologías de desarrollo. Guías, reglas y buenas prácticas para tus agentes.",
       },
       {
         title: "A.I. Quality code",
-        description: "El desarrollo es productivo, mantenible y de calidad..",
+        description: "El desarrollo es productivo, mantenible y de calidad. Testing a todos los niveles para garantizar la funcionalidad.",
       }
     ],
     cta: {

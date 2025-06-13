@@ -7,23 +7,57 @@ import Section from "../components/Section.astro";
 const CONSULTORIA = {
   layout: {
     title: "Consultoría",
-    description: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+    description: "Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
   },
   hero: {
     title: "Consultoría",
-    subtitle: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+    subtitle: "Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
     cta: {
-      text: "Elevate your code quality",
+      text: "Elevate your code Quality",
       link: "",
     },
-  } ,
+  },
+  services: {
+    title: "¿En qué te puedo ayudar?",
+    subtitle: "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+    cards: [
+      {
+        title: "Arquitectura",
+        cta: {
+          text: "Evaluación y guía de buenas prácticas",
+          link: "#arquitectura",
+        },
+      },
+      {
+        title: "Testing",
+                cta: {
+          text: "Estrategia e implementación",
+          link: "#testing",
+        },
+      },
+      {
+        title: "Refactoring",
+        cta: {
+          text: "Mantenimiento de código legacy",
+          link: "#código-legacy",
+        },
+      },
+      {
+        title: "AI-DD",
+        cta: {
+          text: "Desarrollo con Inteligencia Artificial",
+          link: "#ai-driven-development",
+        },
+      },
+    ]
+  },
   arquitectura: {
     title: "Arquitectura de software",
     subtitle: "¿Nuevo proyecto? ¿Quizá un rewrite? Construye sobre una buena base.",
     cards: [
       {
         title: "Frontend",
-        description: "Aplicaciones con Angular modernas y mantenibles. Gestión de estado. Micro frontends. Testing. etc.",
+        description: "Aplicaciones con Angular modernas y mantenibles. Gestión de estado con señales. Micro frontends. Testing. etc.",
       },
       {
         title: "Backend",
@@ -41,15 +75,11 @@ const CONSULTORIA = {
     cards: [
       {
         title: "Unit",
-        description: "La clave está en la velocidad... y en los dobles.",
-      },
-      {
-        title: "Integration",
-        description: "Prueba el comportamiento de tus módulos críticos.",
+        description: "La clave está en la velocidad... y en los dobles. (Jest, Vitest, o los frameworks incorporados de Node y Bun)",
       },
       {
         title: "End-to-End",
-        description: "Compórtate como un usuario y asegura su confianza.",
+        description: "Compórtate como un usuario y asegura su confianza. (Cypress, Playwright o Puppeteer)",
       },
     ]
   },
@@ -81,7 +111,7 @@ const CONSULTORIA = {
       },
       {
         title: "Craftsman",
-        description: "La confianza se gana demostrando que el código funciona y es mantenible.",
+        description: "La confianza se gana demostrando que el código funciona y es mantenible. Agrega test y documentación.",
       },
     ],
   },
@@ -99,6 +129,7 @@ const CONSULTORIA = {
 <Layout layout={CONSULTORIA.layout}>
   <Hero hero={CONSULTORIA.hero} />
 
+  <Section section={CONSULTORIA.services} />  
   <Section section={CONSULTORIA.arquitectura} />  
   <Section section={CONSULTORIA.testing} />
   <Section section={CONSULTORIA.refactoring} />

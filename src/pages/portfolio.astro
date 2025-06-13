@@ -1,20 +1,29 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
 const PORTFOLIO = {
   layout: {
     title: "Portfolio",
     description:
-      "Empresas y organizaciones que he ayudado a mejorar su código.",
+      "Empresas y organizaciones a las que he ayudado a mejorar su código.",
   },
   hero: {
     title: "Portfolio",
-    subtitle: "Empresas y organizaciones que he ayudado a mejorar su código.",
+    subtitle: "Empresas y organizaciones a las que he ayudado a mejorar su código.",
     cta: {
       text: "AI code quality",
       link: "",
     },
-  },
+  }, 
+  sesion: {
+    title: "¿Quieres ver cómo puedo ayudarte?",
+    subtitle: "Soy freelance y trabajo para empresas, departamentos de desarrollo, consultoras o academias del sector IT.",
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
+  } 
 };
 ---
 
@@ -63,4 +72,5 @@ const PORTFOLIO = {
       <li>Zara Home</li>
     </ul>
   </main>
+  <Section section={PORTFOLIO.sesion} />
 </Layout>
