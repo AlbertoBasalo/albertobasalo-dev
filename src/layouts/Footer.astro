@@ -1,26 +1,25 @@
 ---
 import PrimaryComment from "@components/PrimaryComment.astro";
-import BlinkCursor from "../components/BlinkCursor.astro";
 
 const currentYear = new Date().getFullYear();
 
 const localLinks = [
-	{ href: "/consultoria", text: "Consultoría" },
-	{ href: "/formacion", text: "Formación" },
-	// { href: "/portfolio", text: "Portfolio" },
+  { href: "/consultoria", text: "Consultoría" },
+  { href: "/formacion", text: "Formación" },
+  // { href: "/portfolio", text: "Portfolio" },
 ];
 
 const links = [
-	{ href: "https://linkedin.com/in/albertobasalo", text: "LinkedIn" },
-	{ href: "https://github.com/AlbertoBasalo", text: "GitHub" },
-	{ href: "https://twitter.com/AlbertoBasalo", text: "Twitter" },
-	{ href: "https://www.youtube.com/c/AlbertoBasalo71", text: "YouTube" },
+  { href: "https://linkedin.com/in/albertobasalo", text: "LinkedIn" },
+  { href: "https://github.com/AlbertoBasalo", text: "GitHub" },
+  { href: "https://twitter.com/AlbertoBasalo", text: "Twitter" },
+  { href: "https://www.youtube.com/c/AlbertoBasalo71", text: "YouTube" },
 ];
 
 const legalLinks = [
-	{ href: "/legal/privacy/", text: "Privacy Policy" },
-	{ href: "/legal/terms/", text: "Terms of Service" },
-	//{ href: "/legal/cookies/", text: "Cookie Policy" },
+  { href: "/legal/privacy/", text: "Privacy Policy" },
+  { href: "/legal/terms/", text: "Terms of Service" },
+  //{ href: "/legal/cookies/", text: "Cookie Policy" },
 ];
 ---
 
@@ -29,31 +28,50 @@ const legalLinks = [
     <section>
       <h3 class="logo"><a href="/">Alberto Basalo</a></h3>
       <h4><PrimaryComment />AI code quality.</h4>
-        {localLinks.map(link => (
-          <span><a href={link.href}>{link.text}</a><BlinkCursor /></span>
-        ))}
-      
+      {
+        localLinks.map((link) => (
+          <li>
+            <a href={link.href}>{link.text}</a>
+          </li>
+        ))
+      }
     </section>
     <section>
       <h3>Connect</h3>
       <ul>
-        <!--<li><a href="https://aiddbot.com" target="_blank"><b>AIDDbot </b></a></li>-->
-        {links.map(link => (
-          <li><a href={link.href} target="_blank">{link.text}</a></li>
-        ))}
+        {
+          links.map((link) => (
+            <li>
+              <a href={link.href} target="_blank">
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </section>
     <section>
       <h3>Legal</h3>
       <ul>
-        {legalLinks.map(link => (
-          <li><a href={link.href} target="_blank">{link.text}</a></li>
-        ))}
+        {
+          legalLinks.map((link) => (
+            <li>
+              <a href={link.href} target="_blank">
+                {link.text}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </section>
   </main>
   <div>
-   <p>&copy; {currentYear} All rights reserved. Created by <a href="https://albertobasalo.dev" target="_blank">Alberto Basalo</a></p>
+    <p>
+      &copy; {currentYear} All rights reserved. Created by <a
+        href="https://albertobasalo.dev"
+        target="_blank">Alberto Basalo</a
+      >
+    </p>
   </div>
 </footer>
 
