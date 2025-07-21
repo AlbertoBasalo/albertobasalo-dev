@@ -51,6 +51,30 @@ export const HOME: Home = {
       },
     ],
   },
+  aidd: {
+    title: "AI-Driven Development",
+    subtitle:
+      "Una metodología de desarrollo profesional con 3 agentes I.A.",
+    cards: [
+      {
+        title: "Architect",
+        description: "Definición de requerimientos, modelo de dominio y diseño del sistema.",
+      },
+      {
+        title: "Builder",
+        description:
+          "Arquetipos y reglas para planificar tareas y generar código.",
+      },
+      {
+        title: "Craftsman",
+        description: "Mantenimiento y calidad con pruebas y documentación.",
+      },
+    ],
+    cta: {
+      text: "Más info en AI code Academy",
+      link: "https://aicode.academy",
+    },
+  },
   technologies: {
     title: "Tecnologías que utilizo",
     subtitle:
@@ -77,31 +101,5 @@ export const HOME: Home = {
           "Pruebas unitarias, de integración y TDD con TypeScript. (También con Vitest)",
       },
     ],
-  },
-  aidd: {
-    title: "AI-Driven Development",
-    subtitle:
-      "Aplica los principios AI-DD para desarrollar profesionalmente con I.A.",
-    cards: [
-      {
-        title: "Human in the Loop",
-        description:
-          "El humano es estratega, colaborador y responsable. Cambio de rol para los programadores: más documentación y arquitectura de software.",
-      },
-      {
-        title: "Rules over Tools",
-        description:
-          "Las herramientas se someten a metodologías de desarrollo. Guías, reglas y buenas prácticas para tus agentes.",
-      },
-      {
-        title: "A.I. Quality code",
-        description:
-          "El desarrollo es productivo, mantenible y de calidad. Testing a todos los niveles para garantizar la funcionalidad.",
-      },
-    ],
-    cta: {
-      text: "Más info en AI code Academy",
-      link: "https://aicode.academy",
-    },
   },
 };
