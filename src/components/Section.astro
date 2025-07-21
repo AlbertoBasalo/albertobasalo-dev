@@ -2,31 +2,31 @@
 import PrimaryComment from "./PrimaryComment.astro";
 
 export type SectionProps = {
-	title: string;
-	subtitle: string;
-	cards: Card[];
-	cta?: Cta;
+  title: string;
+  subtitle: string;
+  cards: Card[];
+  cta?: Cta;
 };
 
 type Card = {
-	title: string;
-	description: string;
-	cta?: Cta;
+  title: string;
+  description: string;
+  cta?: Cta;
 };
 
 export type Cta = {
-	text: string;
-	link: string;
+  text: string;
+  link: string;
 };
 
 const { section } = Astro.props as { section: SectionProps };
 
 // replace spaces and dots with dashes ensure single dash
 const id = section.title
-	?.toLowerCase()
-	.replace(/ /g, "-")
-	.replace(/\./g, "-")
-	.replace(/-+/g, "-");
+  ?.toLowerCase()
+  .replace(/ /g, "-")
+  .replace(/\./g, "-")
+  .replace(/-+/g, "-");
 ---
 
 <section id={id} class="container">
@@ -34,22 +34,34 @@ const id = section.title
     <h2 class="color">{section.title}</h2>
     <span>{section.subtitle}</span>
   </header>
-  {section.cards && section.cards.length > 0 && (
-    <main class="grid">
-      {section.cards.map((card) => (
-        <article>
-          <h3><PrimaryComment/>{card.title}</h3>
-          <p>{card.description}</p>
-          {card.cta && (
-            <a href={card.cta.link}>{card.cta.text}</a>
-          )}
-        </article>
-      ))}
-    </main>
-  )}  
-  {section.cta && (
-    <footer class="center">
-      <a href={section.cta.link} role="button" class="outline" target="_blank">{section.cta.text}</a>
-    </footer>
-  )}
+  {
+    section.cards && section.cards.length > 0 && (
+      <main class="grid">
+        {section.cards.map((card) => (
+          <article>
+            <h3>
+              <PrimaryComment />
+              {card.title}
+            </h3>
+            <p>{card.description}</p>
+            {card.cta && <a href={card.cta.link}>{card.cta.text}</a>}
+          </article>
+        ))}
+      </main>
+    )
+  }
+  {
+    section.cta && (
+      <footer class="center">
+        <a
+          href={section.cta.link}
+          role="button"
+          class="outline"
+          target="_blank"
+        >
+          {section.cta.text}
+        </a>
+      </footer>
+    )
+  }
 </section>
