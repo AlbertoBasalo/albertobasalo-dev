@@ -9,10 +9,10 @@ import { glob } from "astro/loaders";
  * Defines a page with a title, subtitle, description, slug
  */
 const baseSchema = z.object({
-  title: z.string().min(1),
-  subtitle: z.string().optional(),
-  description: z.string().min(1),
-  slug: z.string().min(1),
+	title: z.string().min(1),
+	subtitle: z.string().optional(),
+	description: z.string().min(1),
+	slug: z.string().min(1),
 });
 
 /**
@@ -20,12 +20,12 @@ const baseSchema = z.object({
  * Defines a blog post adding a category and date
  */
 const blogSchema = z.object({
-  title: z.string().min(1),
-  subtitle: z.string().min(1),
-  description: z.string().min(1),
-  slug: z.string().min(1),
-  category: z.string().min(1),
-  date: z.string().min(1),
+	title: z.string().min(1),
+	subtitle: z.string().min(1),
+	description: z.string().min(1),
+	slug: z.string().min(1),
+	category: z.string().min(1),
+	date: z.string().min(1),
 });
 
 /**
@@ -33,20 +33,20 @@ const blogSchema = z.object({
  * Defines a collection of blog posts
  */
 const blogCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/blog/es" }),
-  schema: blogSchema,
+	loader: glob({ pattern: "**/*.md", base: "./src/content/blog/es" }),
+	schema: blogSchema,
 });
 
 // Other content collections
 
 const legalCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
-  schema: baseSchema,
+	loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
+	schema: baseSchema,
 });
 
 const metadataCollection = defineCollection({
-  type: "content",
-  schema: baseSchema,
+	type: "content",
+	schema: baseSchema,
 });
 
 /**
@@ -55,7 +55,7 @@ const metadataCollection = defineCollection({
  * Each collection has a loader from the content folder and a schema for the content
  */
 export const collections = {
-  blog: blogCollection,
-  legal: legalCollection,
-  metadata: metadataCollection,
+	blog: blogCollection,
+	legal: legalCollection,
+	metadata: metadataCollection,
 };

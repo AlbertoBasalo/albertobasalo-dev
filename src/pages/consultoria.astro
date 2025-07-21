@@ -3,127 +3,141 @@ import Layout from "@layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 
-
 const CONSULTORIA = {
-  layout: {
-    title: "Consultoría",
-    description: "Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
-  },
-  hero: {
-    title: "Consultoría",
-    subtitle: "Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
-    cta: {
-      text: "Elevate your code Quality",
-      link: "",
-    },
-  },
-  services: {
-    title: "¿En qué te puedo ayudar?",
-    subtitle: "Ofrezco servicios como freelance para empresas y departamentos de desarrollo.",
-    cards: [
-      {
-        title: "Arquitectura",
-        cta: {
-          text: "Evaluación y guía de buenas prácticas",
-          link: "#arquitectura",
-        },
-      },
-      {
-        title: "Testing",
-                cta: {
-          text: "Estrategia e implementación",
-          link: "#testing",
-        },
-      },
-      {
-        title: "Refactoring",
-        cta: {
-          text: "Mantenimiento de código legacy",
-          link: "#código-legacy",
-        },
-      },
-      {
-        title: "AI-DD",
-        cta: {
-          text: "Desarrollo con Inteligencia Artificial",
-          link: "#ai-driven-development",
-        },
-      },
-    ]
-  },
-  arquitectura: {
-    title: "Arquitectura de software",
-    subtitle: "¿Nuevo proyecto? ¿Quizá un rewrite? Construye sobre una buena base.",
-    cards: [
-      {
-        title: "Frontend",
-        description: "Aplicaciones con Angular modernas y mantenibles. Gestión de estado con señales. Micro frontends. Testing. etc.",
-      },
-      {
-        title: "Backend",
-        description: "APIs robustas y mantenibles con Express, Fastify, NestJS o Bun. Monolitos, micro-servicios, CQRS y DDD.",
-      },
-    ],
-    cta: {
-      text: "Video resumen sobre arquitecturas de software",
-      link: "https://youtu.be/AFVazQ573wU?si=Wprmb4WxMutRbe0f",
-    }
-  },
-  testing: {
-    title: "Testing",
-    subtitle: "Implanta Jest, Vitest, Cypress o Playwright... y relájate.",
-    cards: [
-      {
-        title: "Unit",
-        description: "La clave está en la velocidad... y en los dobles. (Jest, Vitest, o los frameworks incorporados de Node y Bun)",
-      },
-      {
-        title: "End-to-End",
-        description: "Compórtate como un usuario y asegura su confianza. (Cypress, Playwright o Puppeteer)",
-      },
-    ]
-  },
-  refactoring: {
-    title: "Código legacy",
-    subtitle: "Moderniza tu código legado para hacerlo más fácil de mantener.",
-    cards: [
-      {
-        title: "Refactoring",
-        description: "El paso del tiempo no perdona ni siquiera al código. Corrige, mejora o adapta tu base de código para que siga siendo útil.",
-      },
-      {
-        title: "Migraciones",
-        description: "Actualiza tus desarrollos a las últimas versiones de tus frameworks y lenguajes para ganar rendimiento y seguridad.",
-      },
-    ]
-  },
-  ia: {
-    title: "AI-Driven Development",
-    subtitle: "Aumenta tu productividad y la calidad de tu código con tres agentes de IA.",
-    cards: [
-      {
-        title: "Architect",
-        description: "Briefings, PRDs, user stories, data models, etc. Incluye la IA desde el principio.",
-      },
-      {
-        title: "Builder",
-        description: "Con el contexto y las reglas de codificación adecuados, el código se escribe solo. (o casi)",
-      },
-      {
-        title: "Craftsman",
-        description: "La confianza se gana demostrando que el código funciona y es mantenible. Agrega test y documentación.",
-      },
-    ],
-  },
-  sesion: {
-    title: "Sesión de consultoría",
-    subtitle: "¿Quieres que te ayude a mejorar tu productividad o la calidad de tu código?",
-    cta: {
-      text: "Contacta conmigo en LinkedIn",
-      link: "https://www.linkedin.com/in/albertobasalo/",
-    },
-  }
-}
+	layout: {
+		title: "Consultoría",
+		description:
+			"Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
+	},
+	hero: {
+		title: "Consultoría",
+		subtitle:
+			"Arquitectura, patrones, testing y buenas prácticas; no es magIA, es tecnología.",
+		cta: {
+			text: "Elevate your code Quality",
+			link: "",
+		},
+	},
+	services: {
+		title: "¿En qué te puedo ayudar?",
+		subtitle:
+			"Ofrezco servicios como freelance para empresas y departamentos de desarrollo.",
+		cards: [
+			{
+				title: "Arquitectura",
+				cta: {
+					text: "Evaluación y guía de buenas prácticas",
+					link: "#arquitectura",
+				},
+			},
+			{
+				title: "Testing",
+				cta: {
+					text: "Estrategia e implementación",
+					link: "#testing",
+				},
+			},
+			{
+				title: "Refactoring",
+				cta: {
+					text: "Mantenimiento de código legacy",
+					link: "#código-legacy",
+				},
+			},
+			{
+				title: "AI-DD",
+				cta: {
+					text: "Desarrollo con Inteligencia Artificial",
+					link: "#ai-driven-development",
+				},
+			},
+		],
+	},
+	arquitectura: {
+		title: "Arquitectura de software",
+		subtitle:
+			"¿Nuevo proyecto? ¿Quizá un rewrite? Construye sobre una buena base.",
+		cards: [
+			{
+				title: "Frontend",
+				description:
+					"Aplicaciones con Angular modernas y mantenibles. Gestión de estado con señales. Micro frontends. Testing. etc.",
+			},
+			{
+				title: "Backend",
+				description:
+					"APIs robustas y mantenibles con Express, Fastify, NestJS o Bun. Monolitos, micro-servicios, CQRS y DDD.",
+			},
+		],
+		cta: {
+			text: "Video resumen sobre arquitecturas de software",
+			link: "https://youtu.be/AFVazQ573wU?si=Wprmb4WxMutRbe0f",
+		},
+	},
+	testing: {
+		title: "Testing",
+		subtitle: "Implanta Jest, Vitest, Cypress o Playwright... y relájate.",
+		cards: [
+			{
+				title: "Unit",
+				description:
+					"La clave está en la velocidad... y en los dobles. (Jest, Vitest, o los frameworks incorporados de Node y Bun)",
+			},
+			{
+				title: "End-to-End",
+				description:
+					"Compórtate como un usuario y asegura su confianza. (Cypress, Playwright o Puppeteer)",
+			},
+		],
+	},
+	refactoring: {
+		title: "Código legacy",
+		subtitle: "Moderniza tu código legado para hacerlo más fácil de mantener.",
+		cards: [
+			{
+				title: "Refactoring",
+				description:
+					"El paso del tiempo no perdona ni siquiera al código. Corrige, mejora o adapta tu base de código para que siga siendo útil.",
+			},
+			{
+				title: "Migraciones",
+				description:
+					"Actualiza tus desarrollos a las últimas versiones de tus frameworks y lenguajes para ganar rendimiento y seguridad.",
+			},
+		],
+	},
+	ia: {
+		title: "AI-Driven Development",
+		subtitle:
+			"Aumenta tu productividad y la calidad de tu código con tres agentes de IA.",
+		cards: [
+			{
+				title: "Architect",
+				description:
+					"Briefings, PRDs, user stories, data models, etc. Incluye la IA desde el principio.",
+			},
+			{
+				title: "Builder",
+				description:
+					"Con el contexto y las reglas de codificación adecuados, el código se escribe solo. (o casi)",
+			},
+			{
+				title: "Craftsman",
+				description:
+					"La confianza se gana demostrando que el código funciona y es mantenible. Agrega test y documentación.",
+			},
+		],
+	},
+	sesion: {
+		title: "Sesión de consultoría",
+		subtitle:
+			"¿Quieres que te ayude a mejorar tu productividad o la calidad de tu código?",
+		cta: {
+			text: "Contacta conmigo en LinkedIn",
+			link: "https://www.linkedin.com/in/albertobasalo/",
+		},
+	},
+};
 ---
 
 <Layout layout={CONSULTORIA.layout}>

@@ -2,27 +2,31 @@
 import PrimaryComment from "./PrimaryComment.astro";
 
 export type SectionProps = {
-  title: string;
-  subtitle: string;
-  cards: Card[];
-  cta?: Cta;
+	title: string;
+	subtitle: string;
+	cards: Card[];
+	cta?: Cta;
 };
 
 type Card = {
-  title: string;
-  description: string;
-  cta?: Cta;
+	title: string;
+	description: string;
+	cta?: Cta;
 };
 
 export type Cta = {
-  text: string;
-  link: string;
+	text: string;
+	link: string;
 };
 
 const { section } = Astro.props as { section: SectionProps };
 
 // replace spaces and dots with dashes ensure single dash
-const id = section.title?.toLowerCase().replace(/ /g, "-").replace(/\./g, "-").replace(/-+/g, "-");
+const id = section.title
+	?.toLowerCase()
+	.replace(/ /g, "-")
+	.replace(/\./g, "-")
+	.replace(/-+/g, "-");
 ---
 
 <section id={id} class="container">
