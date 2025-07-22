@@ -9,6 +9,7 @@ export type Home = {
   services: SectionProps;
   technologies: SectionProps;
   aidd: SectionProps;
+  us: SectionProps;
 };
 
 export const HOME: Home = {
@@ -29,7 +30,7 @@ export const HOME: Home = {
   services: {
     title: "¿En qué te puedo ayudar?",
     subtitle:
-      "La industria del software evoluciona como nunca; pero no es magIA, es tecnología.",
+      "La programación evoluciona como nunca; pero no es magIA, es tecnología.",
     cards: [
       {
         title: "Consultoría",
@@ -83,23 +84,33 @@ export const HOME: Home = {
       {
         title: "Angular",
         description:
-          "Migraciones, gestión de estado, micro frontends, testing, etc. (Angular clásico o moderno con señales y sin módulos)",
+          "Migraciones, gestión de estado, micro frontends, testing...",
       },
       {
         title: "Express",
         description:
-          "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS, etc. (También con Bun y NestJS)",
+          "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
       },
       {
         title: "Cypress",
         description:
-          "Automatización de pruebas end-to-end de aplicaciones web y APIs. (También con Playwright o Puppeteer)",
+          "Automatización de pruebas end-to-end de aplicaciones web y APIs.",
       },
       {
         title: "Jest",
         description:
-          "Pruebas unitarias, de integración y TDD con TypeScript. (También con Vitest)",
+          "Pruebas unitarias, de integración y TDD con TypeScript.",
       },
     ],
+  },
+  us: {
+    title: "¿Quién soy?",
+    subtitle:
+      "Programador profesional, formador y consultor desde el siglo pasado.",
+    cards: [],
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
   },
 };
