@@ -55,20 +55,20 @@ export const HOME: Home = {
   aidd: {
     title: "AI-Driven Development",
     subtitle:
-      "Una metodología de desarrollo profesional con 3 agentes I.A.",
+      "Una metodología de desarrollo profesional para programadores de cualquier lenguaje.",
     cards: [
       {
-        title: "Architect",
-        description: "Definición de requerimientos, modelo de dominio y diseño del sistema.",
+        title: "3 Agentes",
+        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los modos: Architect, Builder y Craftsman.",
       },
       {
-        title: "Builder",
+        title: "Tecnología",
         description:
-          "Arquetipos y reglas para planificar tareas y generar código.",
+          "Cualquier modelo, editor y agente es bienvenido. AIDD te ayuda a sacarle el máximo partido y adaptarte a los cambios.",
       },
       {
-        title: "Craftsman",
-        description: "Mantenimiento y calidad con pruebas y documentación.",
+        title: "Calidad",
+        description: "Generar código rápidamente no vale de nada si no es de calidad y mantenible. Se necesitan pruebas y documentación.",
       },
     ],
     cta: {
@@ -92,15 +92,15 @@ export const HOME: Home = {
           "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
       },
       {
-        title: "Cypress",
+        title: "Cypress/Playwright",
         description:
-          "Automatización de pruebas end-to-end de aplicaciones web y APIs.",
+          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs.",
       },
       {
-        title: "Jest",
+        title: "Corporativas",
         description:
-          "Pruebas unitarias, de integración y TDD con TypeScript.",
-      },
+          "Arquitecturas basadas en microservicios, CQRS, DDD, Hexagonal, etc. en CSharp, Java y TypeScript.",
+      }
     ],
   },
   us: {
