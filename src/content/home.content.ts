@@ -58,13 +58,13 @@ export const HOME: Home = {
       "Una metodología de desarrollo profesional para programadores de cualquier lenguaje.",
     cards: [
       {
-        title: "3 Agentes",
-        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los modos: Architect, Builder y Craftsman.",
+        title: "Agentes",
+        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los tres modos: Architect, Builder y Craftsman.",
       },
       {
-        title: "Tecnología",
+        title: "Tecnologías",
         description:
-          "Cualquier modelo, editor y agente es bienvenido. AIDD te ayuda a sacarle el máximo partido y adaptarte a los cambios.",
+          "Cualquier modelo, editor y agente es bienvenido. AIDD te permite sacarle el máximo partido actual y adaptarte a los cambios.",
       },
       {
         title: "Calidad",
@@ -92,9 +92,9 @@ export const HOME: Home = {
           "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
       },
       {
-        title: "Cypress/Playwright",
+        title: "Playwright",
         description:
-          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs.",
+          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs. (También Cypress)",
       },
       {
         title: "Corporativas",
@@ -106,7 +106,7 @@ export const HOME: Home = {
   us: {
     title: "¿Quién soy?",
     subtitle:
-      "Programador profesional, formador y consultor desde el siglo pasado.",
+      "Programador profesional, formador y consultor... desde el siglo pasado.",
     cards: [],
     cta: {
       text: "Contacta conmigo en LinkedIn",
