@@ -23,13 +23,7 @@ const { title, subtitle, cta } = hero;
     cta && (
       <footer class="center">
         {cta.link && (
-          <a
-            role="button"
-            class="outline"
-            href={cta.link}
-            target="_blank"
-            rel="noopener"
-          >
+          <a role="button" class="outline" href={cta.link} rel="noopener">
             {cta.text}
           </a>
         )}
