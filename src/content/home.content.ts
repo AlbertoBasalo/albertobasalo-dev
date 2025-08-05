@@ -82,24 +82,24 @@ export const HOME: Home = {
       "Puedo ayudarte o formar a tu equipo en las tecnologías que te interesen.",
     cards: [
       {
-        title: "Angular",
+        title: "Frontend",
         description:
-          "Migraciones, gestión de estado, micro frontends, testing...",
+          "Todo sobre Angular: Migraciones, gestión de estado, micro frontends, testing...",
       },
       {
-        title: "Express",
+        title: "Backend",
         description:
-          "APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
+          "Express, NestJS, APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
       },
       {
-        title: "Playwright",
+        title: "Testing",
         description:
-          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs. (También Cypress)",
+          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs con Jest, Vitest, Playwright, Cypress...",
       },
       {
-        title: "Corporativas",
+        title: "Arquitecturas",
         description:
-          "Arquitecturas basadas en microservicios, CQRS, DDD, Hexagonal, etc. en CSharp, Java y TypeScript.",
+          "Desarrollo corporativo basado en microservicios, CQRS, DDD, Hexagonal, etc. en CSharp, Java y TypeScript.",
       }
     ],
   },
