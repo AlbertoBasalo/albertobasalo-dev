@@ -4,29 +4,29 @@ import Hero from "../components/Hero.astro";
 import Section from "../components/Section.astro";
 
 const PORTFOLIO = {
-	layout: {
-		title: "Portfolio",
-		description:
-			"Empresas y organizaciones a las que he ayudado a mejorar su código.",
-	},
-	hero: {
-		title: "Portfolio",
-		subtitle:
-			"Empresas y organizaciones a las que he ayudado a mejorar su código.",
-		cta: {
-			text: "Enterprise code Quality",
-			link: "",
-		},
-	},
-	sesion: {
-		title: "¿Quieres ver cómo puedo ayudarte?",
-		subtitle:
-			"Soy freelance y trabajo para empresas, departamentos de desarrollo, consultoras o academias del sector IT.",
-		cta: {
-			text: "Contacta conmigo en LinkedIn",
-			link: "https://www.linkedin.com/in/albertobasalo/",
-		},
-	},
+  layout: {
+    title: "Portfolio",
+    description:
+      "Empresas y organizaciones a las que he ayudado a mejorar su código.",
+  },
+  hero: {
+    title: "Portfolio",
+    subtitle:
+      "Empresas y organizaciones a las que he ayudado a mejorar su código.",
+    cta: {
+      text: "Enterprise code Quality",
+      link: "",
+    },
+  },
+  section: {
+    title: "¿Quieres ver cómo puedo ayudarte?",
+    subtitle:
+      "Soy freelance y trabajo para empresas, departamentos de desarrollo, consultoras o academias del sector IT.",
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
+  },
 };
 ---
 
@@ -75,5 +75,26 @@ const PORTFOLIO = {
       <li>Zara Home</li>
     </ul>
   </main>
-  <Section section={PORTFOLIO.sesion} />
+
+  <aside class="container center">
+    <header>
+      <h1 class="color">AIDDbot</h1>
+      <p class="color">Configuración de Agente de IA Open Source</p>
+    </header>
+    <main>
+      Siguiendo la filosofía AI-Driven Development, he desarrollado <kbd
+        >AIDDbot</kbd
+      >, un conjunto de herramientas (prompts, instrucciones, agentes, etc.)
+      para que puedas usar fácilmente toda la potencia de la IA en tu día a día.
+    </main>
+    <footer>
+      <a
+        role="button"
+        class="outline secondary"
+        href="https://aicode.academy/community/opensource/aiddbot/"
+        >Descubre AIDDbot</a
+      >
+    </footer>
+  </aside>
+  <Section section={PORTFOLIO.section} />
 </Layout>
