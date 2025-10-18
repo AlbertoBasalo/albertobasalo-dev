@@ -1,7 +1,7 @@
 ---
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
@@ -9,7 +9,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const logo = "/logo_2.png";
 const fontAPI = "https://fonts.googleapis.com";
 const fontFamilies =
-	"family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow";
+  "family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow";
 const fonts = `${fontAPI}/css2?${fontFamilies}&display=swap`;
 const motto = "AI code quality.";
 const twitterHandle = "@AlbertoBasalo";
@@ -28,7 +28,7 @@ const image = `https://albertobasalo.dev/site-og-image.png?${new Date().toISOStr
   <!-- Google Fonts -->
   <link rel="preconnect" href={fontAPI} />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href={fonts}  />
+  <link rel="stylesheet" href={fonts} />
 
   <!-- Main Meta Tags -->
   <title>{title}</title>
@@ -48,4 +48,4 @@ const image = `https://albertobasalo.dev/site-og-image.png?${new Date().toISOStr
   <meta name="twitter:title" content={title + " | " + motto} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
-
+</head>
