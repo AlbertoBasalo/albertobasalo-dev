@@ -83,6 +83,11 @@ section {
   padding-bottom: 2%;
 }
 
+article>footer,
+article>header {
+  background-color: var(--pico-background-color);
+}
+
 header {
   margin-bottom: 1rem;
 }

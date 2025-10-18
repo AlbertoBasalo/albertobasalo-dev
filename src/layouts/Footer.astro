@@ -28,13 +28,15 @@ const legalLinks = [
     <section>
       <h3 class="logo color"><a href="/">Alberto Basalo</a></h3>
       <h4><PrimaryComment />AI code quality.</h4>
-      {
-        localLinks.map((link) => (
-          <li>
-            <a href={link.href}>{link.text}</a>
-          </li>
-        ))
-      }
+      <ul>
+        {
+          localLinks.map((link) => (
+            <li>
+              <a href={link.href}>{link.text}</a>
+            </li>
+          ))
+        }
+      </ul>
     </section>
     <section>
       <h3>Connect</h3>

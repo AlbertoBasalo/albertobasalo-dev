@@ -30,8 +30,8 @@ const id = section.title
 ---
 
 <section id={id} class="container">
-  <header class="center">
-    <h2 class="color">{section.title}</h2>
+  <header class="">
+    <h2 class="">{section.title}</h2>
     <span>{section.subtitle}</span>
   </header>
   {
@@ -52,13 +52,8 @@ const id = section.title
   }
   {
     section.cta && (
-      <footer class="center">
-        <a
-          href={section.cta.link}
-          role="button"
-          class="secondary"
-          target="_blank"
-        >
+      <footer class="">
+        <a href={section.cta.link} role="button" class="" target="_blank">
           {section.cta.text}
         </a>
       </footer>
