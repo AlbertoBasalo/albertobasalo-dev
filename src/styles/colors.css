@@ -1,82 +1,155 @@
 :root {
-  --ab-light-green: #00ff00;
-  --ab-green: #00aa00;
-  --ab-dark-green: #007700;
-  --ab-light-blue: #00ffff;
-  --ab-blue: #00aaff;
-  --ab-dark-blue: #0077ff;
-  --ab-white: #fff;
-  --ab-yellow: #fafa00;
-  --ab-red: #ff0000;
-  --ab-light-gray: #fefefe;
-  --ab-gray: #777777;
-  --ab-dark-gray: #222222;
+  /* ========================================
+     CORE PALETTE - Raw color definitions
+     "Electric Bioluminescence" - Sophisticated Tech
+     These are the source values - DO NOT use directly outside :root
+     ======================================== */
+
+  /* Dark Theme Base Colors */
+  --ab-deep-space: #0A1128;
+  --ab-deep-navy: #0A1128;
+  --ab-surface: #121B33;
+
+  /* Light Theme Base Colors */
+  --ab-ice-white: #F8FAFC;
+  --ab-light-surface: #F1F5F9;
+
+  /* Primary Accent - Bioluminescent Cyan */
+  --ab-cyan-primary: #00F2FF;
+  --ab-cyan-vivid: #33F5FF;
+  --ab-cyan-deep: #00C4CC;
+
+  /* Secondary Accent - Acid Mint */
+  --ab-mint-primary: #80FFDB;
+  --ab-mint-deep: #5CECC6;
+
+  /* Neutral Accents */
+  --ab-chrome: #A8DADC;
+  --ab-slate: #457B9D;
+
+  /* Glow Effects - Cyan */
+  --ab-glow-strong-raw: rgba(0, 242, 255, 0.4);
+  --ab-glow-medium-raw: rgba(0, 242, 255, 0.3);
+  --ab-glow-soft-raw: rgba(0, 242, 255, 0.1);
+  --ab-glow-light-raw: rgba(0, 242, 255, 0.15);
+
+  /* Glassmorphism - Dark Base */
+  --ab-glass-dark: rgba(10, 17, 40, 0.7);
+  --ab-glass-dark-border: rgba(0, 242, 255, 0.15);
+
+  /* Glassmorphism - Light Base */
+  --ab-glass-light: rgba(248, 250, 252, 0.7);
+  --ab-glass-light-border: rgba(0, 0, 0, 0.08);
+
+  /* Mesh Gradients */
+  --ab-mesh-dark: radial-gradient(at 0% 0%, hsla(183, 100%, 50%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(162, 100%, 75%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(223, 61%, 10%, 1) 0px, transparent 100%);
+
+  --ab-mesh-light: radial-gradient(at 0% 0%, hsla(183, 100%, 50%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(162, 100%, 60%, 0.06) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(210, 40%, 98%, 1) 0px, transparent 100%);
 }
 
-/* dark theme */
 [data-theme="dark"] {
-  --pico-color: var(--ab-light-gray);
-  --pico-background-color: var(--ab-dark-gray);
-  --pico-primary: var(--ab-blue);
-  --pico-primary-hover: var(--ab-blue);
-  --pico-primary-background: var(--ab-light-blue);
-  --pico-primary-hover-background: var(--ab-blue);
-  --pico-primary-inverse: var(--pico-background-color);
-  --pico-card-background-color: var(--pico-background-color);
-  --pico-underline: var(--ab-light-blue);
-  --pico-primary-underline: var(--ab-light-blue);
-  --pico-secondary: var(--ab-light-green);
-  --pico-secondary-hover: var(--ab-green);
-  --pico-secondary-background: var(--ab-light-green);
-  --pico-secondary-hover-background: var(--ab-green);
-  --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
-  --ab-theme-gray: var(--ab-dark-gray);
+  /* Pico Mapping - Dark Theme */
+  --pico-background-color: var(--ab-deep-space);
+  --pico-color: var(--ab-ice-white);
 
-  --ab-gradient-primary:
-    linear-gradient(0deg,
-      var(--ab-blue) 0%,
-      var(--ab-light-blue) 50%,
-      var(--ab-light-green) 75%,
-      var(--ab-green) 90%);
-  --ab-gradient-secondary:
-    linear-gradient(45deg,
-      var(--ab-blue) 0%,
-      var(--ab-light-blue) 50%,
-      var(--ab-light-green) 75%,
-      var(--ab-green) 90%);
+  --pico-primary: var(--ab-cyan-primary);
+  --pico-primary-hover: var(--ab-cyan-vivid);
+  --pico-primary-background: var(--ab-cyan-primary);
+
+  --pico-secondary: var(--ab-mint-primary);
+  --pico-secondary-hover: var(--ab-mint-deep);
+
+  --pico-card-background-color: var(--ab-surface);
+  --pico-box-shadow: 0 10px 40px -10px var(--ab-glow-soft-raw);
+
+  /* ========================================
+     INTENTIONAL SEMANTIC VARIABLES
+     Use these outside of :root - they adapt to theme
+     ======================================== */
+
+  /* Surfaces & Backgrounds */
+  --ab-glass: var(--ab-glass-dark);
+  --ab-glass-border: var(--ab-glass-dark-border);
+  --ab-mesh-bg: var(--ab-mesh-dark);
+  --ab-theme-gray: var(--ab-surface);
+  --ab-code-bg: var(--ab-surface);
+
+  /* Selection */
+  --ab-selection-bg: var(--ab-cyan-primary);
+  --ab-selection-color: var(--ab-deep-navy);
+
+  /* Glow Effects */
+  --ab-glow-strong: var(--ab-glow-strong-raw);
+  --ab-glow-medium: var(--ab-glow-medium-raw);
+  --ab-glow-soft: var(--ab-glow-soft-raw);
+
+  /* Text & Accents */
+  --ab-comment-color: var(--ab-mint-primary);
+  --ab-accent-chrome: var(--ab-chrome);
+
+  /* Gradients */
+  --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-primary) 0%, var(--ab-mint-primary) 100%);
+  --ab-gradient-secondary: linear-gradient(45deg, var(--ab-mint-primary) 0%, var(--ab-cyan-primary) 100%);
+
   color-scheme: dark;
 }
 
-/* light theme */
+/* Light Theme - Inverted from Dark Theme */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --pico-color: var(--ab-dark-gray);
-  --pico-background-color: var(--ab-light-gray);
-  --pico-primary: var(--ab-blue);
-  --pico-primary-hover: var(--ab-light-blue);
-  --pico-primary-background: var(--ab-blue);
-  --pico-primary-hover-background: var(--ab-light-blue);
-  --pico-primary-inverse: var(--pico-background-color);
-  --pico-underline: var(--ab-blue);
-  --pico-primary-underline: var(--ab-blue);
-  --pico-secondary: var(--ab-light-green);
-  --pico-secondary-hover: var(--ab-green);
-  --pico-secondary-background: var(--ab-light-green);
-  --pico-secondary-hover-background: var(--ab-green);
-  --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
-  --ab-theme-gray: var(--ab-light-gray);
-  --ab-gradient-primary:
-    linear-gradient(0deg,
-      var(--ab-blue) 0%,
-      var(--ab-dark-blue) 50%,
-      var(--ab-dark-green) 75%,
-      var(--ab-green) 90%);
-  --ab-gradient-secondary:
-    linear-gradient(45deg,
-      var(--ab-blue) 0%,
-      var(--ab-dark-blue) 50%,
-      var(--ab-dark-green) 75%,
-      var(--ab-green) 90%);
+  /* Pico Mapping - Light Theme */
+  --pico-background-color: var(--ab-ice-white);
+  --pico-color: var(--ab-deep-space);
+
+  --pico-primary: var(--ab-cyan-deep);
+  --pico-primary-hover: var(--ab-cyan-primary);
+  --pico-primary-background: var(--ab-cyan-deep);
+  --pico-primary-hover-background: var(--ab-cyan-primary);
+  --pico-primary-inverse: var(--ab-ice-white);
+  --pico-underline: var(--ab-cyan-deep);
+  --pico-primary-underline: var(--ab-cyan-deep);
+
+  --pico-secondary: var(--ab-mint-deep);
+  --pico-secondary-hover: var(--ab-mint-primary);
+  --pico-secondary-background: var(--ab-mint-deep);
+  --pico-secondary-hover-background: var(--ab-mint-primary);
+
+  --pico-card-background-color: var(--ab-light-surface);
+  --pico-box-shadow: 0 10px 40px -10px var(--ab-glow-light-raw);
+
+  /* ========================================
+     INTENTIONAL SEMANTIC VARIABLES
+     Use these outside of :root - they adapt to theme
+     ======================================== */
+
+  /* Surfaces & Backgrounds */
+  --ab-glass: var(--ab-glass-light);
+  --ab-glass-border: var(--ab-glass-light-border);
+  --ab-mesh-bg: var(--ab-mesh-light);
+  --ab-theme-gray: var(--ab-light-surface);
+  --ab-code-bg: var(--ab-light-surface);
+
+  /* Selection */
+  --ab-selection-bg: var(--ab-cyan-deep);
+  --ab-selection-color: var(--ab-ice-white);
+
+  /* Glow Effects */
+  --ab-glow-strong: var(--ab-glow-strong-raw);
+  --ab-glow-medium: var(--ab-glow-medium-raw);
+  --ab-glow-soft: var(--ab-glow-soft-raw);
+
+  /* Text & Accents */
+  --ab-comment-color: var(--ab-mint-deep);
+  --ab-accent-chrome: var(--ab-slate);
+
+  /* Gradients */
+  --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-deep) 0%, var(--ab-mint-deep) 100%);
+  --ab-gradient-secondary: linear-gradient(45deg, var(--ab-mint-deep) 0%, var(--ab-cyan-deep) 100%);
+
   color-scheme: light;
 }
 
@@ -93,11 +166,17 @@ b {
 
 code {
   color: var(--pico-color);
-  background-color: var(--ab-theme-gray);
+  background-color: var(--ab-code-bg);
 }
 
 a {
-  text-decoration: underline;
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[role="button"] {
   background: var(--ab-gradient-secondary);
   -webkit-background-clip: text;
   background-clip: text;

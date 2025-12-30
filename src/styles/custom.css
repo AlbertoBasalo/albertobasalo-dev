@@ -1,47 +1,74 @@
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+/* custom.css - 2026 Refresh
+  Components & Effects
+*/
 
-.color {
+.logo {
+  font-family: var(--pico-font-family-sans-serif);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  font-style: normal;
   background: var(--ab-gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px var(--ab-glow-strong));
 }
 
-.colored-headers h1 {
-  background: var(--ab-gradient-primary);
+.container,
+article {
+  background: var(--ab-glass) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--ab-glass-border);
+  border-radius: var(--pico-border-radius);
+  padding: 2.5rem !important;
+  transition: transform 0.3s ease;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+/* Hover effect for a "tactile" tech feel */
+article:hover {
+  border-color: var(--ab-glow-medium);
+  box-shadow: 0 0 30px var(--ab-glow-soft);
+}
+
+.color,
+.colored-headers h2,
+.colored-headers h3,
+.colored-headers h4 {
+  background: var(--pico-primary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .comment {
-  color: var(--pico-primary);
-  margin-right: 1%;
-}
-
-.container {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.logo {
-  font-family: var(--pico-font-family-emoji);
-  color: var(--ab-gradient-secondary);
+  color: var(--ab-comment-color);
+  font-family: var(--pico-font-family-monospace);
+  font-size: 0.9em;
+  opacity: 0.9;
+  padding-left: 0rem;
+  padding-right: 0.5rem;
 }
 
 .primary {
   color: var(--pico-primary);
+  font-weight: 600;
 }
 
 .secondary {
-  background: var(--ab-gradient-secondary);
+  background: var(--ab-secondary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1rem;
 }
