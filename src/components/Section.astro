@@ -1,23 +1,7 @@
 ---
 import PrimaryComment from "./PrimaryComment.astro";
 
-export type SectionProps = {
-  title: string;
-  subtitle: string;
-  cards: Card[];
-  cta?: Cta;
-};
-
-type Card = {
-  title: string;
-  description: string;
-  cta?: Cta;
-};
-
-export type Cta = {
-  text: string;
-  link: string;
-};
+import type { SectionProps } from "./Section.types";
 
 const { section } = Astro.props as { section: SectionProps };
 

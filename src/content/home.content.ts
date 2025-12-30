@@ -1,4 +1,4 @@
-import type { SectionProps } from "../components/Section.astro";
+import type { SectionProps } from "../components/Section.types";
 
 export type Home = {
   layout: {
@@ -8,6 +8,7 @@ export type Home = {
   hero: SectionProps;
   services: SectionProps;
   technologies: SectionProps;
+  bestPractices: SectionProps;
   aidd: SectionProps;
   us: SectionProps;
 };
@@ -23,14 +24,14 @@ export const HOME: Home = {
     subtitle: "Consultoría y formación para programadores profesionales.",
     cards: [],
     cta: {
-      text: "AI code Quality",
+      text: "AI Code Quality",
       link: "",
     },
   },
   services: {
     title: "¿En qué te puedo ayudar?",
     subtitle:
-      "La programación evoluciona como nunca; pero no es magIA, es tecnología.",
+      "La programación evoluciona como nunca; pero no es magIA, es Tecnología.",
     cards: [
       {
         title: "Consultoría",
@@ -55,26 +56,48 @@ export const HOME: Home = {
   aidd: {
     title: "AI-Driven Development",
     subtitle:
-      "Una metodología de desarrollo profesional para programadores de cualquier lenguaje.",
+      "Una metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
     cards: [
       {
-        title: "Agentes",
-        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los tres modos: Architect, Builder y Craftsman.",
+        title: "Human in the Loop",
+        description: "El programador es el estratega, colaborador y responsable.",
       },
       {
-        title: "Tecnologías",
+        title: "Rules Over Tools",
         description:
-          "Cualquier modelo, editor y agente es bienvenido. AIDD te permite sacarle el máximo partido actual y adaptarte a los cambios.",
+          "Instrucciones para que los agentes se comporten como se espera.",
       },
       {
-        title: "Calidad",
-        description: "Generar código rápidamente no vale de nada si no es de calidad y mantenible. Se necesitan pruebas y documentación.",
+        title: "Spec Driven Development",
+        description: "Especificaciones claras para un código mantenible y de calidad.",
       },
     ],
     cta: {
-      text: "Más info en AI code Academy",
+      text: "Más info en AI Code Academy",
       link: "https://aicode.academy",
     },
+  },
+  bestPractices: {
+    title: "Buenas prácticas de programación",
+    subtitle:
+      "Puedo ayudarte o formar a tu equipo en las buenas prácticas de programación que te interesen.",
+    cards: [
+      {
+        title: "Arquitectura",
+        description:
+          "Arquitecturas limpias, DDD, CQRS, Microservicios.",
+      },
+      {
+        title: "Testing",
+        description:
+          "Pruebas unitarias, integración y end-to-end de aplicaciones web y APIs",
+      },
+      {
+        title: "Refactoring",
+        description:
+          "Código limpio, mantenible y de calidad. Modernización de código legacy.",
+      }
+    ],
   },
   technologies: {
     title: "Tecnologías que utilizo",
@@ -84,22 +107,17 @@ export const HOME: Home = {
       {
         title: "Frontend",
         description:
-          "Todo sobre Angular: Migraciones, gestión de estado, micro frontends, testing...",
+          "Todo sobre Angular: clásico, moderno, MFE, testing...",
       },
       {
         title: "Backend",
         description:
-          "Express, NestJS, APIs, rendimiento, seguridad. Arquitecturas limpias, CQRS...",
+          "Express, NestJS, Java, C#, APIs...",
       },
       {
         title: "Testing",
         description:
-          "Automatización de pruebas de integración y end-to-end de aplicaciones web y APIs con Jest, Vitest, Playwright, Cypress...",
-      },
-      {
-        title: "Arquitecturas",
-        description:
-          "Desarrollo corporativo basado en microservicios, CQRS, DDD, Hexagonal, etc. en CSharp, Java y TypeScript.",
+          "Jest, Vitest, Playwright, Cypress...",
       }
     ],
   },
