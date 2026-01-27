@@ -24,7 +24,7 @@ export const HOME: Home = {
     subtitle: "Consultoría y formación para programadores profesionales.",
     cards: [],
     cta: {
-      text: "AI Code Quality",
+      text: "A.I. Code Quality",
       link: "",
     },
   },
@@ -36,7 +36,7 @@ export const HOME: Home = {
       {
         title: "Consultoría",
         description:
-          "Arquitectura de software, migraciones, refactoring, buenas prácticas, testing e IA.",
+          "Arquitectura de software, refactoring, buenas prácticas, testing con IA.",
         cta: {
           text: "Necesito una consultoría",
           link: "/consultoria",
@@ -56,7 +56,7 @@ export const HOME: Home = {
   aidd: {
     title: "AI-Driven Development",
     subtitle:
-      "Una metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
+      "Metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
     cards: [
       {
         title: "Human in the Loop",
@@ -64,12 +64,11 @@ export const HOME: Home = {
       },
       {
         title: "Rules Over Tools",
-        description:
-          "Instrucciones para que los agentes se comporten como se espera.",
+        description: "Instrucciones para que los agentes se comporten como se espera.",
       },
       {
         title: "Spec Driven Development",
-        description: "Especificaciones claras para un código mantenible y de calidad.",
+        description: "Requerimientos funcionales completos y detallados.",
       },
     ],
     cta: {
