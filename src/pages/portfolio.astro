@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import PrimaryComment from "../components/PrimaryComment.astro";
+import Promo from "../components/Promo.astro";
 import Section from "../components/Section.astro";
 
 const PORTFOLIO = {
@@ -111,25 +112,6 @@ const PORTFOLIO = {
     </main>
   </section>
 
-  <section class="container">
-    <header>
-      <h1 class=""><PrimaryComment />AIDDbot</h1>
-      <p class="">Configuración de Agente de IA Open Source</p>
-    </header>
-    <main>
-      Siguiendo la filosofía AI-Driven Development, he desarrollado <kbd
-        >AIDDbot</kbd
-      >, un conjunto de herramientas (prompts, instrucciones, agentes, etc.)
-      para que puedas usar fácilmente toda la potencia de la IA en tu día a día.
-    </main>
-    <footer>
-      <a
-        role="button"
-        class="outline"
-        href="https://aicode.academy/community/opensource/aiddbot/"
-        >Descubre AIDDbot</a
-      >
-    </footer>
-  </section>
+  <Promo />
   <Section section={PORTFOLIO.section} />
 </Layout>
