@@ -1,15 +1,13 @@
 /* Modern CSS Reset and Global Styles */
 
 :root {
-  /* The "Sci-Fi Sharp" Pack */
-  --pico-font-family-sans-serif: "Space Grotesk", sans-serif;
-  --pico-font-family-emoji: "Space Grotesk", monospace;
-  --pico-font-family-serif: "Geist", serif;
-  --pico-font-family: "Geist", system-ui, sans-serif;
-  --pico-font-family-monospace: "Geist Mono", monospace;
-  --pico-border-radius: 0rem;
+  --pico-font-family-sans-serif: "Audiowide", "Roboto", sans-serif;
+  --pico-font-family-emoji: "Roboto", sans-serif;
+  --pico-font-family-serif: "Roboto", serif;
+  --pico-font-family: "Roboto", system-ui, sans-serif;
+  --pico-font-family-monospace: "Anonymous Pro", monospace;
+  --pico-border-radius: 0.65rem;
   --pico-typography-spacing-vertical: 0.6rem;
-  /* Readability Pro-Features */
   --pico-line-height: 1.7;
   --pico-typography-spacing-vertical: 1.5rem;
   scroll-behavior: smooth;
@@ -20,6 +18,7 @@ body {
   background-image: var(--ab-mesh-bg);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* Tactile Grain Overlay (2026 Trend) */
@@ -43,8 +42,8 @@ h3,
 h4 {
   font-family: var(--pico-font-family-sans-serif);
   font-weight: 700;
-  letter-spacing: -0.02em;
-  text-transform: tight;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 /* Custom Selection Glow */
@@ -185,4 +184,14 @@ kbd {
   border-left: 1px solid var(--pico-primary);
   padding: 0.2rem 0.5rem;
   font-weight: bold;
+}
+
+:where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--pico-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 0.2rem var(--ab-glow-soft);
+}
+
+:where(a, button, [role="button"], input, textarea, select) {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 200ms ease;
 }
