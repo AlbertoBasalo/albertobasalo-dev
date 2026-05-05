@@ -6,19 +6,21 @@
   --pico-font-family-serif: "Roboto", serif;
   --pico-font-family: "Roboto", system-ui, sans-serif;
   --pico-font-family-monospace: "Anonymous Pro", monospace;
-  --pico-border-radius: 0.65rem;
-  --pico-typography-spacing-vertical: 0.6rem;
-  --pico-line-height: 1.7;
-  --pico-typography-spacing-vertical: 1.5rem;
+  --pico-border-radius: 0.5rem;
+  --pico-line-height: 1.6;
+  --pico-typography-spacing-vertical: 1rem;
+  --ab-page-gutter: clamp(0.75rem, 4vw, 20%);
+  --ab-section-gutter: clamp(0.75rem, 2.6vw, 10%);
+  --ab-section-block-space: clamp(0.75rem, 1.8vw, 1.5rem);
   scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--pico-font-family);
+  font-size: clamp(0.9rem, 0.84rem + 0.35vw, 1rem);
   background-image: var(--ab-mesh-bg);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 /* Tactile Grain Overlay (2026 Trend) */
@@ -41,9 +43,8 @@ h2,
 h3,
 h4 {
   font-family: var(--pico-font-family-sans-serif);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 /* Custom Selection Glow */
@@ -52,63 +53,9 @@ h4 {
   color: var(--ab-selection-color);
 }
 
-@media (min-width: 576px) {
-  body {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  article,
-  section {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  article,
-  section {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  body {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  article,
-  section {
-    padding-left: 7% !important;
-    padding-right: 7% !important;
-  }
-}
-
-@media (min-width: 1536px) {
-  body {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  article,
-  section {
-    padding-left: 10% !important;
-    padding-right: 10%;
-  }
+body {
+  padding-left: var(--ab-page-gutter);
+  padding-right: var(--ab-page-gutter);
 }
 
 h1,
@@ -121,39 +68,39 @@ h6 {
 }
 
 h1 {
-  --pico-font-size: 2.5rem;
+  --pico-font-size: clamp(1.85rem, 1.45rem + 2vw, 3rem);
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 3.5rem;
+  --pico-typography-spacing-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  --pico-font-size: 2rem;
+  --pico-font-size: clamp(1.45rem, 1.2rem + 1vw, 2rem);
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 3rem;
+  --pico-typography-spacing-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
 h3 {
-  --pico-font-size: 1.5rem;
+  --pico-font-size: clamp(1.2rem, 1.05rem + 0.7vw, 1.5rem);
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 2rem;
+  --pico-typography-spacing-top: 1rem;
   margin-bottom: 0.75rem;
 }
 
 h4 {
-  --pico-font-size: 1.25rem;
+  --pico-font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.25rem);
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 1.5rem;
+  --pico-typography-spacing-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
 article,
 section {
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-left: var(--ab-section-gutter);
+  padding-right: var(--ab-section-gutter);
+  padding-top: var(--ab-section-block-space);
+  padding-bottom: var(--ab-section-block-space);
 }
 
 article>footer,
@@ -186,12 +133,10 @@ kbd {
   font-weight: bold;
 }
 
-:where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
+a:focus-visible,
+[role="button"]:focus-visible,
+button:focus-visible,
+#theme-toggle:focus-visible {
   outline: 2px solid var(--pico-primary);
   outline-offset: 2px;
-  box-shadow: 0 0 0 0.2rem var(--ab-glow-soft);
-}
-
-:where(a, button, [role="button"], input, textarea, select) {
-  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 200ms ease;
 }

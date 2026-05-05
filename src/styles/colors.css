@@ -9,6 +9,13 @@
   --ab-danger: #dc2626;
   --ab-text: #111827;
   --ab-surface: #ffffff;
+  --ab-neutral: #ffffff;
+
+  /* Cosmic fluid spacing tokens */
+  --ab-page-gutter: clamp(0.75rem, 4vw, 20%);
+  --ab-section-gutter: clamp(0.75rem, 2.6vw, 10%);
+  --ab-section-block: clamp(0.75rem, 1.8vw, 1.5rem);
+  --ab-container-padding: clamp(1rem, 3vw, 2.5rem);
 
   /* Futuristic neutrals */
   --ab-dark-900: #040711;
