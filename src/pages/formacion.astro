@@ -25,24 +25,10 @@ const FORMACION = {
       "Ofrezco servicios como freelance para academias y consultoras del sector TI.",
     cards: [
       {
-        title: "Angular",
+        title: "AI-Driven Development",
         cta: {
-          text: "Fundamentos y avanzado",
-          link: "#angular",
-        },
-      },
-      {
-        title: "Testing",
-        cta: {
-          text: "Unit, E2E y TDD",
-          link: "#testing",
-        },
-      },
-      {
-        title: "AI-DD",
-        cta: {
-          text: "Desarrollo con IA",
-          link: "#desarrollo-con-ia",
+          text: "Aprende a desarrollar con IA",
+          link: "#ai-driven-development",
         },
       },
       {
@@ -52,22 +38,12 @@ const FORMACION = {
           link: "#buenas-prácticas",
         },
       },
-    ],
-  },
-  angular: {
-    title: "Angular",
-    subtitle:
-      "Domina Angular para desarrollar aplicaciones de categoría empresarial.",
-    cards: [
       {
-        title: "Basic",
-        description:
-          "Fundamentos del framework más usado por bancos, administraciones y multinacionales. (Angular clásico o moderno con señales y sin módulos)",
-      },
-      {
-        title: "Advanced",
-        description:
-          "Escala tus desarrollos con librerías, micro front-ends y gestión avanzada de estado. Agrega testing, CI/CD y más.",
+        title: "Testing",
+        cta: {
+          text: "Unit, E2E y TDD",
+          link: "#testing",
+        },
       },
     ],
   },
@@ -79,10 +55,6 @@ const FORMACION = {
         title: "Jest o Vitest",
         description:
           "Pruebas unitarias de Node, Angular y cualquier variante de JavaScript.",
-      },
-      {
-        title: "Cypress",
-        description: "Pruebas fáciles y dev-friendly de aplicaciones web.",
       },
       {
         title: "Playwright",
@@ -125,11 +97,6 @@ const FORMACION = {
         description:
           "Evita code-smells aplicando patrones de diseño: estructurales, de comportamiento y de creación.",
       },
-      {
-        title: "Arquitectura de software",
-        description:
-          "Desde las capas de un monolito modular, hasta un sistema distribuido con micro servicios y CQRS.",
-      },
     ],
   },
   ediciones: {
@@ -160,10 +127,9 @@ const FORMACION = {
   <main>
     <Promo />
     <Section section={FORMACION.services} />
-    <Section section={FORMACION.angular} />
-    <Section section={FORMACION.testing} />
     <Section section={FORMACION.aidd} />
     <Section section={FORMACION.clean} />
+    <Section section={FORMACION.testing} />
     <Section section={FORMACION.ediciones} />
   </main>
 </Layout>
