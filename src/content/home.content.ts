@@ -17,11 +17,11 @@ export const HOME: Home = {
   layout: {
     title: "Alberto Basalo",
     description:
-      "La programación evoluciona como nunca. Ayudo a empresas y profesionales a estar al día.",
+      "Ayudo a equipos de desarrollo a usar IA sin sacrificar arquitectura ni calidad.",
   },
   hero: {
     title: "Alberto Basalo",
-    subtitle: "Consultoría y formación para programadores profesionales.",
+    subtitle: "Consultoría y formación para crear software profesional con IA.",
     cards: [],
     cta: {
       text: "A.I. Code Quality",
@@ -31,21 +31,21 @@ export const HOME: Home = {
   services: {
     title: "¿En qué te puedo ayudar?",
     subtitle:
-      "La programación evoluciona como nunca; pero no es magIA, es Tecnología.",
+      "Arquitectura, testing y calidad en desarrollos con IA.",
     cards: [
       {
         title: "Consultoría",
         description:
-          "Arquitectura de software, refactoring, buenas prácticas, testing con IA.",
+          "Ayudo a equipos a integrar IA en su desarrollo sin perder mantenibilidad.",
         cta: {
-          text: "Necesito una consultoría",
+          text: "Quiero mejorar mi arquitectura",
           link: "/consultoria",
         },
       },
       {
         title: "Formación",
         description:
-          "Cursos a medida, formación en video o en directo. Bonificada para empresas.",
+          "Formación práctica para programadores profesionales.",
         cta: {
           text: "Necesito formación",
           link: "/formacion",
@@ -56,19 +56,19 @@ export const HOME: Home = {
   aidd: {
     title: "AI-Driven Development",
     subtitle:
-      "Metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
+      "Una forma de trabajar con IA para generar software mantenible, testeable y profesional.",
     cards: [
       {
         title: "Human in the Loop",
-        description: "El programador es el estratega, colaborador y responsable.",
+        description: "El programador sigue tomando las decisiones importantes. La IA acelera el desarrollo.",
       },
       {
         title: "Rules Over Tools",
-        description: "Instrucciones para que los agentes se comporten como se espera.",
+        description: "La productividad no depende del agente, sino del contexto y las reglas que recibe.",
       },
       {
         title: "Spec Driven Development",
-        description: "Requerimientos funcionales completos y detallados.",
+        description: "Especificaciones claras para alinear agentes, programadores y negocio.",
       },
     ],
     cta: {
@@ -79,22 +79,22 @@ export const HOME: Home = {
   bestPractices: {
     title: "Buenas prácticas de programación",
     subtitle:
-      "Puedo ayudarte o formar a tu equipo en las buenas prácticas de programación que te interesen.",
+      "Puedo ayudarte a construir software más fácil de evolucionar, probar y mantener.",
     cards: [
       {
         title: "Arquitectura",
         description:
-          "Arquitecturas limpias, DDD, CQRS, Microservicios.",
+          "Diseño de sistemas mantenibles: desde monolitos bien estructurados hasta arquitecturas distribuidas.",
       },
       {
         title: "Testing",
         description:
-          "Pruebas unitarias, integración y end-to-end de aplicaciones web y APIs",
+          "Implanta testing útil y mantenible para reducir bugs y desplegar con confianza.",
       },
       {
         title: "Refactoring",
         description:
-          "Código limpio, mantenible y de calidad. Modernización de código legacy.",
+          "Reduce deuda técnica y moderniza aplicaciones legacy sin poner en riesgo producción.",
       }
     ],
   },
@@ -104,26 +104,21 @@ export const HOME: Home = {
       "Puedo ayudarte o formar a tu equipo en las tecnologías que te interesen.",
     cards: [
       {
-        title: "Frontend",
+        title: "AI Powered IDEs",
         description:
-          "Todo sobre Angular: clásico, moderno, MFE, testing...",
+          "Antigravity, Cursor, IntelliJ, VSCode.",
       },
       {
-        title: "Backend",
+        title: "AI Dev Agents",
         description:
-          "Express, NestJS, Java, C#, APIs...",
-      },
-      {
-        title: "Testing",
-        description:
-          "Jest, Vitest, Playwright, Cypress...",
+          "ClaudeCode, Codex, Copilot, OpenCode.",
       }
     ],
   },
   us: {
     title: "¿Quién soy?",
     subtitle:
-      "Programador profesional, formador y consultor... desde el siglo pasado.",
+      "Programador profesional, formador y consultor combinando experiencia clásica con herramientas modernas.",
     cards: [],
     cta: {
       text: "Contacta conmigo en LinkedIn",
