@@ -116,7 +116,7 @@ export const HOME: Home = {
     ],
   },
   us: {
-    title: "¿Quién soy?",
+    title: "Alberto Basalo",
     subtitle:
       "Programador profesional, formador y consultor combinando experiencia clásica con herramientas modernas.",
     cards: [],
