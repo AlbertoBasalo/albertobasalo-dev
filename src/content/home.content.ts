@@ -54,9 +54,9 @@ export const HOME: Home = {
     ],
   },
   aidd: {
-    title: "AI-Driven Development",
+    title: "¿Qué es AI-Driven Development?",
     subtitle:
-      "La metodología de desarrollo con IA para generar software mantenible, fiable y escalable.",
+      "Una metodología para usar IA durante todo el ciclo de desarrollo sin perder control, calidad ni mantenibilidad.",
     cards: [
       {
         title: "Human in the Loop",
@@ -72,8 +72,8 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Más info en AI Code Academy",
-      link: "https://aicode.academy",
+      text: "My agente AIDDbot te ayuda a implementar AI-Driven Development",
+      link: "https://aiddbot.com/",
     },
   },
   bestPractices: {
