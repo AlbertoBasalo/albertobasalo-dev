@@ -25,25 +25,19 @@ const FORMACION = {
       "Ofrezco servicios como freelance para academias y consultoras del sector TI.",
     cards: [
       {
-        title: "AI-Driven Development",
-        cta: {
-          text: "Aprende a desarrollar con IA",
-          link: "#ai-driven-development",
-        },
+        title: "AI-DD",
+        description:
+          "Aprende la metodología AI-Driven Development para aumentar la productividad sin perder calidad.",
       },
       {
         title: "Clean Code",
-        cta: {
-          text: "Patrones y Arquitectura",
-          link: "#buenas-prácticas",
-        },
+        description:
+          "Aprende a desarrollar un software más mantenible y escalable para adaptarlo al futuro.",
       },
       {
         title: "Testing",
-        cta: {
-          text: "Unit, E2E y TDD",
-          link: "#testing",
-        },
+        description:
+          "Aprende a probar tu código y su funcionalidad para ganar tranquilidad y confianza.",
       },
     ],
   },
@@ -124,12 +118,11 @@ const FORMACION = {
 
 <Layout layout={FORMACION.layout}>
   <Hero hero={FORMACION.hero} />
-  <main>
-    <Promo />
-    <Section section={FORMACION.services} />
-    <Section section={FORMACION.aidd} />
-    <Section section={FORMACION.clean} />
-    <Section section={FORMACION.testing} />
-    <Section section={FORMACION.ediciones} />
-  </main>
+
+  <Section section={FORMACION.services} />
+  <Section section={FORMACION.aidd} />
+  <Section section={FORMACION.clean} />
+  <Section section={FORMACION.testing} />
+  <Section section={FORMACION.ediciones} />
+  <Promo />
 </Layout>

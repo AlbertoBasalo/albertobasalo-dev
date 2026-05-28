@@ -31,23 +31,23 @@ export const HOME: Home = {
   services: {
     title: "¿En qué te puedo ayudar?",
     subtitle:
-      "Arquitectura, testing y calidad en desarrollos con IA.",
+      "Aumenta tu productividad manteniendo control y calidad.",
     cards: [
       {
         title: "Consultoría",
         description:
           "Ayudo a equipos a integrar IA en su desarrollo sin perder mantenibilidad.",
         cta: {
-          text: "Quiero mejorar mi arquitectura",
+          text: "Quiero integrar IA en el SDLC",
           link: "/consultoria",
         },
       },
       {
         title: "Formación",
         description:
-          "Formación práctica para programadores profesionales.",
+          "Formación práctica en herramientas IA para programadores profesionales.",
         cta: {
-          text: "Necesito formación",
+          text: "Necesito usar mejor las herramientas IA",
           link: "/formacion",
         },
       },
@@ -56,7 +56,7 @@ export const HOME: Home = {
   aidd: {
     title: "AI-Driven Development",
     subtitle:
-      "Una forma de trabajar con IA para generar software mantenible, testeable y profesional.",
+      "La metodología de desarrollo con IA para generar software mantenible, fiable y escalable.",
     cards: [
       {
         title: "Human in the Loop",
@@ -101,7 +101,7 @@ export const HOME: Home = {
   technologies: {
     title: "Tecnologías que utilizo",
     subtitle:
-      "Puedo ayudarte o formar a tu equipo en las tecnologías que te interesen.",
+      "No importa tu framework o lenguaje, puedo ayudarte o formar a tu equipo en las tecnologías que te interesen.",
     cards: [
       {
         title: "AI Powered IDEs",
