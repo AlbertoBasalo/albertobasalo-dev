@@ -12,13 +12,8 @@ const navItems: NavItem[] = [
     external: true,
   },
   {
-    href: "https://cursor.com/referral?code=HEBPDHXRFV9I",
-    text: "Cursor Promo Code",
-    external: true,
-  },
-  {
-    href: "https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/?referralCode=C007FD1664EEB37226B8",
-    text: "Udemy",
+    href: "https://www.udemy.com/course/spec-driven-development-inteligente/?referralCode=D67B0EB2BD294D29A5B7",
+    text: "SDD@Udemy",
     external: true,
   },
 ];
@@ -75,8 +70,9 @@ const navItems: NavItem[] = [
 <script>
   const htmlElement = document.documentElement;
   const getTheme = () => htmlElement.getAttribute("data-theme");
-  const setTheme = (theme) => htmlElement.setAttribute("data-theme", theme);
-  const saveTheme = (theme) => localStorage.setItem("theme", theme);
+  const setTheme = (theme: string) =>
+    htmlElement.setAttribute("data-theme", theme);
+  const saveTheme = (theme: string) => localStorage.setItem("theme", theme);
   document.getElementById("theme-toggle")?.addEventListener("click", () => {
     const newTheme = getTheme() === "dark" ? "light" : "dark";
     setTheme(newTheme);
